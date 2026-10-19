@@ -1,0 +1,15 @@
+{
+  "name": "tmp36",
+  "author": "ΘΕΟΔΩΡΟΣ ΓΚΡΑΜΜΗΣ",
+   "pins": ["VCC", "OUT", "GND"],
+  "controls": [
+    {
+      "id": "temperature",
+      "label": "Temperature",
+      "type": "range",
+      "min": -40,
+      "max": 125,
+      "step": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "ΘΕΟΔΩΡΟΣ ΓΚΡΑΜΜΗΣ",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -18.6, "left": -58.2, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -99.6, "left": -73, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -53.65,
+      "left": 9.6,
+      "attrs": { "value": "220" }
+    },
+    { "type": "chip-tmp36", "id": "chip1", "top": 241.02, "left": 110.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "chip1:VCC", "uno:5V", "red", [ "h-28.8" ] ],
+    [ "chip1:GND", "uno:GND.3", "black", [ "v-48", "h-98.19" ] ],
+    [ "chip1:OUT", "uno:A0", "green", [ "h-19.2", "v19.2", "h153.6", "v-86.4", "h-105.6" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "uno:13", "red", [ "v0" ] ],
+    [ "led1:C", "uno:GND.2", "black", [ "h-18.8", "v268.8", "h188.1" ] ]
+  ],
+  "dependencies": {}
+}
